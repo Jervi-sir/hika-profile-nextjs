@@ -25,7 +25,7 @@ export const ClientProject = () => {
   return (
     <>
       <div className="container px-0 md:px-0">
-        <div className="space-y-4 mb-8 text-center">
+        <div className="space-y-4 mb-8 text-center px-4 md:px-6 ">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Client Projects</h2>
           <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Check out some of the amazing Youtube video projects I&apos;ve worked on for my clients.
@@ -75,7 +75,7 @@ export const ClientProject = () => {
             </div>
             <div className="pattern-background hidden md:flex" style={{ width: 300, }} ></div>
           </div>
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-center md:items-start">
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <TikTokEmbed url="https://www.tiktok.com/@_laflxm/video/7213436201364147462?lang=en" width={320} />
             </div>
