@@ -1,9 +1,9 @@
-import { ClientFeedback } from "./components/ClientFeedback";
-import { ClientProject } from "./components/ClientProject";
-import { ContactMe } from "./components/ContactMe";
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
-import { HeroSection } from "./components/HeroSection";
+import ClientFeedback from "./sections/ClientFeedback";
+import { ClientProject } from "./sections/ClientProject";
+import { ContactMe } from "./sections/ContactMe";
+import { Footer } from "./sections/Footer";
+import { Header } from "./sections/Header";
+import { HeroSection } from "./sections/HeroSection";
 
 export default function Home() {
   return (
