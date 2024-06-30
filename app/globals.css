@@ -63,3 +63,19 @@
     border-radius: 8px;
     object-fit: cover;
   }
+
+
+  .grid-container-masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+  }
+
+  .grid-item-masonry {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
