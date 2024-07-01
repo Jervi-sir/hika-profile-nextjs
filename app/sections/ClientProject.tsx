@@ -64,7 +64,7 @@ export const ClientProject = () => {
         </div>
         <div className="space-y-4 my-8 text-center">
           <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Check out some of the amazing Youtube video projects I&apos;ve worked on for my clients.
+            And also short-form content I have done.
           </p>
         </div>
         {/* Shorts */}
