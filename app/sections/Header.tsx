@@ -9,7 +9,7 @@ import { FilmIcon } from "lucide-react"
 
 export const Header = () => {
   return (
-    <header className=" px-4 lg:px-6 h-14 flex">
+    <header className=" px-4 lg:px-6 h-14 flex z-10">
       <div className="navbar">
         <div className="navbar-start">
           <a className="btn btn-ghost text-xl">Hika</a>

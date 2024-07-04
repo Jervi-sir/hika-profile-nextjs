@@ -1,0 +1,20 @@
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animated-path {
+  animation: fadeInOut 2s infinite;
+}
+
+.animated-path:nth-child(odd) {
+  animation-delay: 0.5s;
+}
+
+.animated-path:nth-child(even) {
+  animation-delay: 1s;
+}
