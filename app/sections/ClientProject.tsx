@@ -2,8 +2,10 @@
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
-import { XEmbed } from 'react-social-media-embed';
+import { InstagramEmbed, XEmbed } from 'react-social-media-embed';
 import { TikTokEmbed } from 'react-social-media-embed';
+import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
+import 'react-horizontal-scrolling-menu/dist/styles.css';
 
 export const ClientProject = () => {
   const clients = [
@@ -68,18 +70,24 @@ export const ClientProject = () => {
           </p>
         </div>
         {/* Shorts */}
-        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-2 md:max-w-[70%] md:mx-auto">
-          <div className="flex flex-col items-center md:items-end ">
-            <div>
-              <XEmbed url="https://x.com/HikaEdits/status/1785323226559881587" width={300}   />
-            </div>
-            <div className="pattern-background hidden md:flex" style={{ width: 300, }} ></div>
+        <div className="md:max-w-[70%] md:mx-auto">
+          <div className="flex justify-center items-center md:items-end ">
+              <InstagramEmbed url="https://www.instagram.com/reel/C9C1yWxC91J/" width={320} />
           </div>
-          <div className="flex flex-col items-center md:items-start">
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div className="flex items-center px-16" style={{ overflowX: 'auto', whiteSpace: 'nowrap' }}>
+            <div style={{ display: 'inline-block', justifyContent: 'center', marginRight: '10px' }}>
               <TikTokEmbed url="https://www.tiktok.com/@_laflxm/video/7213436201364147462?lang=en" width={320} />
             </div>
+            <div style={{ display: 'inline-block', justifyContent: 'center', marginRight: '10px' }}>
+              <TikTokEmbed url="https://www.tiktok.com/@_bennelson_/video/7368711591967100191?_r=1&_t=8npplM9wgo2" width={320} />
+            </div>
+            <div style={{ display: 'inline-block', justifyContent: 'center', marginRight: '10px' }}>
+              <TikTokEmbed url="https://www.tiktok.com/@bioticnova/video/7388619441421978911?_r=1&_t=8npp65Ie2uj" width={320} />
+            </div>
           </div>
+          {/* <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
+             
+          </ScrollMenu> */}
         </div>
       </div>
     </>
