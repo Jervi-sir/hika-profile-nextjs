@@ -1,4 +1,5 @@
 import { Background1 } from "./backgrounds/Background1";
+import { BioSection } from "./sections/BioSection";
 import ClientFeedback from "./sections/ClientFeedback";
 import { ClientProject } from "./sections/ClientProject";
 import { ContactMe } from "./sections/ContactMe";
@@ -15,13 +16,16 @@ export default function Home() {
         <section className="w-full py-8 md:py-16 lg:py-18">
           <HeroSection />
         </section>
-        <section id="projects" className="w-full py-12 md:py-24 lg:py-32">
+        <section className="w-full py-4 ">
+          <BioSection />
+        </section>
+        <section id="projects" className="w-full py-10 md:py-12 lg:py-24">
           <ClientProject />
         </section>
-        <section id="feedback" className="w-full py-12 md:py-24 lg:py-32">
+        <section id="feedback" className="w-full py-10 md:py-12 lg:py-24">
           <ClientFeedback />
         </section>
-        <section id="contact-form" className="w-full py-12 md:py-24 lg:py-32">
+        <section id="contact-form" className="w-full py-10 md:py-12 lg:py-24">
           <ContactMe />
         </section>
       </main>
