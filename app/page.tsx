@@ -16,10 +16,10 @@ export default function Home() {
         <section className="w-full py-8 md:py-16 lg:py-18">
           <HeroSection />
         </section>
-        <section className="w-full py-4 ">
+        <section className="w-full py-0 ">
           <BioSection />
         </section>
-        <section id="projects" className="w-full py-10 md:py-12 lg:py-24">
+        <section id="projects" className="w-full pb-10 md:pb-12 lg:pb-24">
           <ClientProject />
         </section>
         <section id="feedback" className="w-full py-10 md:py-12 lg:py-24">
